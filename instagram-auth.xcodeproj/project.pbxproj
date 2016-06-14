@@ -14,7 +14,23 @@
 		3814C2C01D0E2F4E001FC733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2BF1D0E2F4E001FC733 /* ViewController.swift */; };
 		3814C2C21D0E30A1001FC733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C11D0E30A1001FC733 /* Constants.swift */; };
 		3814C2C51D0E3A4B001FC733 /* Dictionary+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C41D0E3A4B001FC733 /* Dictionary+Utilities.swift */; };
+		3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C61D0E3B55001FC733 /* NetworkManager.swift */; };
+		3814C2C91D0F74BB001FC733 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C81D0F74BB001FC733 /* NetworkError.swift */; };
+		3814C2DF1D0F8B22001FC733 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2DE1D0F8B22001FC733 /* NetworkManagerTests.swift */; };
+		3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C61D0E3B55001FC733 /* NetworkManager.swift */; };
+		3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C81D0F74BB001FC733 /* NetworkError.swift */; };
+		3814C2E31D0F8D49001FC733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C11D0E30A1001FC733 /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3814C2D71D0F8ACA001FC733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3814C29E1D0E2D99001FC733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3814C2A51D0E2D99001FC733;
+			remoteInfo = "instagram-auth";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3814C2A61D0E2D99001FC733 /* instagram-auth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-auth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +42,23 @@
 		3814C2BF1D0E2F4E001FC733 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3814C2C11D0E30A1001FC733 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3814C2C41D0E3A4B001FC733 /* Dictionary+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utilities.swift"; sourceTree = "<group>"; };
+		3814C2C61D0E3B55001FC733 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3814C2C81D0F74BB001FC733 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3814C2D21D0F8ACA001FC733 /* instagram-authTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instagram-authTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3814C2D61D0F8ACA001FC733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3814C2DE1D0F8B22001FC733 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		3814C2E01D0F8B43001FC733 /* instagram-authTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "instagram-authTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3814C2A31D0E2D99001FC733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3814C2CF1D0F8ACA001FC733 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3814C2A81D0E2D99001FC733 /* instagram-auth */,
+				3814C2D31D0F8ACA001FC733 /* instagram-authTests */,
 				3814C2A71D0E2D99001FC733 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3814C2A61D0E2D99001FC733 /* instagram-auth.app */,
+				3814C2D21D0F8ACA001FC733 /* instagram-authTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +106,8 @@
 		3814C2BB1D0E2DE5001FC733 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3814C2C61D0E3B55001FC733 /* NetworkManager.swift */,
+				3814C2C81D0F74BB001FC733 /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -110,6 +143,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3814C2D31D0F8ACA001FC733 /* instagram-authTests */ = {
+			isa = PBXGroup;
+			children = (
+				3814C2E01D0F8B43001FC733 /* instagram-authTests-Bridging-Header.h */,
+				3814C2DC1D0F8AE1001FC733 /* Network */,
+				3814C2D61D0F8ACA001FC733 /* Info.plist */,
+			);
+			path = "instagram-authTests";
+			sourceTree = "<group>";
+		};
+		3814C2DC1D0F8AE1001FC733 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3814C2DE1D0F8B22001FC733 /* NetworkManagerTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +181,24 @@
 			productReference = 3814C2A61D0E2D99001FC733 /* instagram-auth.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3814C2D11D0F8ACA001FC733 /* instagram-authTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3814C2D91D0F8ACA001FC733 /* Build configuration list for PBXNativeTarget "instagram-authTests" */;
+			buildPhases = (
+				3814C2CE1D0F8ACA001FC733 /* Sources */,
+				3814C2CF1D0F8ACA001FC733 /* Frameworks */,
+				3814C2D01D0F8ACA001FC733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3814C2D81D0F8ACA001FC733 /* PBXTargetDependency */,
+			);
+			name = "instagram-authTests";
+			productName = "instagram-authTests";
+			productReference = 3814C2D21D0F8ACA001FC733 /* instagram-authTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +211,10 @@
 				TargetAttributes = {
 					3814C2A51D0E2D99001FC733 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					3814C2D11D0F8ACA001FC733 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3814C2A51D0E2D99001FC733;
 					};
 				};
 			};
@@ -159,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				3814C2A51D0E2D99001FC733 /* instagram-auth */,
+				3814C2D11D0F8ACA001FC733 /* instagram-authTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +248,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3814C2D01D0F8ACA001FC733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -183,12 +264,33 @@
 			files = (
 				3814C2C01D0E2F4E001FC733 /* ViewController.swift in Sources */,
 				3814C2AA1D0E2D99001FC733 /* AppDelegate.swift in Sources */,
+				3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */,
+				3814C2C91D0F74BB001FC733 /* NetworkError.swift in Sources */,
 				3814C2C51D0E3A4B001FC733 /* Dictionary+Utilities.swift in Sources */,
 				3814C2C21D0E30A1001FC733 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3814C2CE1D0F8ACA001FC733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */,
+				3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */,
+				3814C2DF1D0F8B22001FC733 /* NetworkManagerTests.swift in Sources */,
+				3814C2E31D0F8D49001FC733 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3814C2D81D0F8ACA001FC733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3814C2A51D0E2D99001FC733 /* instagram-auth */;
+			targetProxy = 3814C2D71D0F8ACA001FC733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3814C2AD1D0E2D99001FC733 /* Main.storyboard */ = {
@@ -317,6 +419,35 @@
 			};
 			name = Release;
 		};
+		3814C2DA1D0F8ACA001FC733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "instagram-authTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tolkiana.instagram-authTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "instagram-authTests/instagram-authTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagram-auth.app/instagram-auth";
+			};
+			name = Debug;
+		};
+		3814C2DB1D0F8ACA001FC733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "instagram-authTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tolkiana.instagram-authTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "instagram-authTests/instagram-authTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instagram-auth.app/instagram-auth";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +465,14 @@
 			buildConfigurations = (
 				3814C2B91D0E2D99001FC733 /* Debug */,
 				3814C2BA1D0E2D99001FC733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3814C2D91D0F8ACA001FC733 /* Build configuration list for PBXNativeTarget "instagram-authTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3814C2DA1D0F8ACA001FC733 /* Debug */,
+				3814C2DB1D0F8ACA001FC733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
