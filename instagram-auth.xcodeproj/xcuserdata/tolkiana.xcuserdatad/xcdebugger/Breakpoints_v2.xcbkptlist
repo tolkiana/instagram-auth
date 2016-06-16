@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "instagram-auth/Network/NetworkManager.swift"
-            timestampString = "487561856.334088"
+            timestampString = "487738993.94511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "HTTPRequest(_:success:failure:)"
             landmarkType = "5">
          </BreakpointContent>
