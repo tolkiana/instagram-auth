@@ -20,7 +20,7 @@ class NetworkManagerTests: XCTestCase {
         
         let success = { (response: AnyObject) -> Void in
             let array = response as? [[String: AnyObject]]
-           XCTAssertNotNil(array)
+            XCTAssertNotNil(array)
             expectation.fulfill()
         }
         
@@ -30,6 +30,8 @@ class NetworkManagerTests: XCTestCase {
         }
         
         NetworkManager.HTTPRequest(request, success: success, failure: failure)
+        
+        self.waitForExpectationsWithTimeout(10, handler: nil)
     }
 
 }
