@@ -23,6 +23,7 @@
                                 <state key="normal" title="Login with Instagram"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8K2-QP-Vxs"/>
+                                    <segue destination="wPq-m9-VYe" kind="presentation" id="SSJ-wy-tbC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,10 +33,6 @@
                             <constraint firstItem="EdF-L6-A3N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j1X-co-dFX"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="If7-MS-ODe" kind="presentation" id="KHB-fa-R6s"/>
-                        <segue destination="gqu-vE-fC7" kind="presentation" id="z2S-dt-CRw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +109,13 @@
                             <constraint firstItem="fyk-Fv-p32" firstAttribute="top" secondItem="hmN-uo-zNe" secondAttribute="top" id="tHP-ng-vtl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6TV-CF-gIW">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="MPv-j2-YR6">
+                            <connections>
+                                <action selector="cancel:" destination="gqu-vE-fC7" id="rLg-Ol-LUz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="fyk-Fv-p32" id="2ej-id-t3c"/>
                         <segue destination="If7-MS-ODe" kind="show" id="ZIP-q0-NbG"/>
@@ -119,10 +123,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A39-uQ-VM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1935" y="424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J6N-bD-acv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wPq-m9-VYe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TRP-YP-jSR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gqu-vE-fC7" kind="relationship" relationship="rootViewController" id="Uvg-5m-amW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTz-3c-8zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1123" y="424"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ZIP-q0-NbG"/>
-    </inferredMetricsTieBreakers>
 </document>

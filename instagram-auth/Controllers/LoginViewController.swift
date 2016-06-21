@@ -11,4 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     @IBOutlet var webView: UIWebView!
 
+    @IBAction func cancel(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
