@@ -32,15 +32,19 @@
                             <constraint firstItem="EdF-L6-A3N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j1X-co-dFX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="If7-MS-ODe" kind="presentation" id="KHB-fa-R6s"/>
+                        <segue destination="gqu-vE-fC7" kind="presentation" id="z2S-dt-CRw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="361" y="424"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="PtB-Tv-m18">
             <objects>
-                <viewController id="If7-MS-ODe" sceneMemberID="viewController">
+                <viewController id="If7-MS-ODe" customClass="WelcomeViewController" customModule="instagram_auth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wyl-e8-LOU"/>
                         <viewControllerLayoutGuide type="bottom" id="rU6-of-2EV"/>
@@ -71,15 +75,19 @@
                             <constraint firstItem="RZN-jC-MfX" firstAttribute="centerX" secondItem="msw-OK-gtq" secondAttribute="centerX" id="eYo-Iu-fEi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="B2s-hF-1dl" id="NnS-F9-WX5"/>
+                        <outlet property="profileImageView" destination="RZN-jC-MfX" id="Be4-vh-XW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROC-oG-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="1133"/>
+            <point key="canvasLocation" x="669" y="1203"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="fNu-OT-tzm">
             <objects>
-                <viewController id="gqu-vE-fC7" sceneMemberID="viewController">
+                <viewController id="gqu-vE-fC7" customClass="LoginViewController" customModule="instagram_auth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Nl-H1-jox"/>
                         <viewControllerLayoutGuide type="bottom" id="hkN-Lv-J5a"/>
@@ -91,6 +99,9 @@
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyk-Fv-p32">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gqu-vE-fC7" id="n8I-gs-1T7"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,10 +112,17 @@
                             <constraint firstItem="fyk-Fv-p32" firstAttribute="top" secondItem="hmN-uo-zNe" secondAttribute="top" id="tHP-ng-vtl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="fyk-Fv-p32" id="2ej-id-t3c"/>
+                        <segue destination="If7-MS-ODe" kind="show" id="ZIP-q0-NbG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A39-uQ-VM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="419"/>
+            <point key="canvasLocation" x="1123" y="424"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZIP-q0-NbG"/>
+    </inferredMetricsTieBreakers>
 </document>
