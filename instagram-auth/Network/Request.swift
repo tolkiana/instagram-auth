@@ -18,7 +18,7 @@ struct Request {
                 Constans.Key.redirect_uri: Constans.URL.redirectURI,
                 Constans.Key.response_type: Constans.Key.code
             ]
-            let stringURL = Constans.URL.instagramAPI + Constans.API.authorize + params.paramsString()
+            let stringURL = Constans.URL.instagramAPI + Constans.API.authorize + "?" + params.paramsString()
             let url = NSURL(string: stringURL)!
             let request = NSMutableURLRequest(URL: url)
             request.HTTPMethod = Constans.HTTPMethod.GET
