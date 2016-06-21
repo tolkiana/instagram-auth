@@ -20,8 +20,6 @@
 		3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C61D0E3B55001FC733 /* NetworkManager.swift */; };
 		3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C81D0F74BB001FC733 /* NetworkError.swift */; };
 		3814C2E31D0F8D49001FC733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C11D0E30A1001FC733 /* Constants.swift */; };
-		3814C2E51D1251C0001FC733 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2E41D1251C0001FC733 /* InstagramService.swift */; };
-		3814C2E61D1251C0001FC733 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2E41D1251C0001FC733 /* InstagramService.swift */; };
 		3814C2E81D15CA26001FC733 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2E71D15CA26001FC733 /* Request.swift */; };
 		3814C2E91D15CA26001FC733 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2E71D15CA26001FC733 /* Request.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +50,6 @@
 		3814C2D61D0F8ACA001FC733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3814C2DE1D0F8B22001FC733 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		3814C2E01D0F8B43001FC733 /* instagram-authTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "instagram-authTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		3814C2E41D1251C0001FC733 /* InstagramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
 		3814C2E71D15CA26001FC733 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +119,6 @@
 		3814C2BC1D0E2DFE001FC733 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3814C2E41D1251C0001FC733 /* InstagramService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -276,7 +272,6 @@
 				3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */,
 				3814C2C91D0F74BB001FC733 /* NetworkError.swift in Sources */,
 				3814C2C51D0E3A4B001FC733 /* Dictionary+Utilities.swift in Sources */,
-				3814C2E51D1251C0001FC733 /* InstagramService.swift in Sources */,
 				3814C2C21D0E30A1001FC733 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +282,6 @@
 			files = (
 				3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */,
 				3814C2E91D15CA26001FC733 /* Request.swift in Sources */,
-				3814C2E61D1251C0001FC733 /* InstagramService.swift in Sources */,
 				3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */,
 				3814C2DF1D0F8B22001FC733 /* NetworkManagerTests.swift in Sources */,
 				3814C2E31D0F8D49001FC733 /* Constants.swift in Sources */,
@@ -479,6 +473,7 @@
 				3814C2BA1D0E2D99001FC733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3814C2D91D0F8ACA001FC733 /* Build configuration list for PBXNativeTarget "instagram-authTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +482,7 @@
 				3814C2DB1D0F8ACA001FC733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
