@@ -26,12 +26,13 @@ class LoginViewController: UIViewController {
 extension LoginViewController: UIWebViewDelegate {
 
     func webViewDidStartLoad(webView: UIWebView) {
+        loadingView.hidden = false
         loadingView.startAnimating()
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
+        loadingView.hidden = true
         loadingView.stopAnimating()
-        loadingView.removeFromSuperview()
     }
     
     func webView(webView: UIWebView,
