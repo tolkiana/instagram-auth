@@ -11,5 +11,5 @@ import Foundation
 protocol InstagramDelegate {
     func didGetAuthorizationCode(code: String)
     func didFailAuthorization()
-    func didGetUserInformation()
+    func didGetAccessToken(token: String, `for` user: User)
 }
