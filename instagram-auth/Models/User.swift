@@ -14,11 +14,18 @@ struct User {
     var fullName: String
     var pictureURL: NSURL?
     
-    init(id: String, userName: String, fullName: String, pictureURL: NSURL?) {
+    init(id: String, userName: String, fullName: String, pictureURL: NSURL) {
         self.id = id
         self.userName = userName
         self.fullName = fullName
         self.pictureURL = pictureURL
+    }
+    
+    init(id: String, userName: String, fullName: String) {
+        self.id = id
+        self.userName = userName
+        self.fullName = fullName
+        self.pictureURL = nil
     }
 }
 
@@ -37,10 +44,7 @@ extension User: Parsable {
         
         guard let pictureString = userDictionary["profile_picture"] as? String,
             let pictureURL = NSURL(string: pictureString) else {
-                return User(id: id,
-                            userName: userName,
-                            fullName: fullName,
-                            pictureURL: nil)
+                return User(id: id, userName: userName, fullName: fullName)
         }
         
         return User(id: id,
