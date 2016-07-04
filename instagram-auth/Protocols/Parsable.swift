@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Parser {
+protocol Parsable {
     associatedtype T
-    func parse(dictionary: [String: AnyObject]) -> T
+    func parse(dictionary: [String: AnyObject]) -> T?
 }
