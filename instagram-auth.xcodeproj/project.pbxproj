@@ -31,6 +31,8 @@
 		4B073AEE1D2B0F7B006BB2B4 /* InstagramDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AEC1D2B0F7B006BB2B4 /* InstagramDelegate.swift */; };
 		4B073AF11D2B10C5006BB2B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF01D2B10C5006BB2B4 /* User.swift */; };
 		4B073AF21D2B10C5006BB2B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF01D2B10C5006BB2B4 /* User.swift */; };
+		4B073AF51D2B12A2006BB2B4 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF41D2B12A2006BB2B4 /* Parser.swift */; };
+		4B073AF61D2B12A2006BB2B4 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF41D2B12A2006BB2B4 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		4B073AEA1D2B0EAB006BB2B4 /* InstagramServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramServiceTests.swift; sourceTree = "<group>"; };
 		4B073AEC1D2B0F7B006BB2B4 /* InstagramDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDelegate.swift; sourceTree = "<group>"; };
 		4B073AF01D2B10C5006BB2B4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4B073AF41D2B12A2006BB2B4 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		3814C2A81D0E2D99001FC733 /* instagram-auth */ = {
 			isa = PBXGroup;
 			children = (
+				4B073AF31D2B1273006BB2B4 /* Protocols */,
 				4B073AEF1D2B105E006BB2B4 /* Models */,
 				3814C2C31D0E39E4001FC733 /* Extensions */,
 				3814C2BE1D0E2ED9001FC733 /* Controllers */,
@@ -200,6 +204,14 @@
 				4B073AF01D2B10C5006BB2B4 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4B073AF31D2B1273006BB2B4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4B073AF41D2B12A2006BB2B4 /* Parser.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +319,7 @@
 				3814C2C01D0E2F4E001FC733 /* ViewController.swift in Sources */,
 				3814C2E81D15CA26001FC733 /* Request.swift in Sources */,
 				3814C2AA1D0E2D99001FC733 /* AppDelegate.swift in Sources */,
+				4B073AF51D2B12A2006BB2B4 /* Parser.swift in Sources */,
 				3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */,
 				3814C2F51D18CE07001FC733 /* LoginViewController.swift in Sources */,
 				4B073AE71D2B0C8E006BB2B4 /* InstagramService.swift in Sources */,
@@ -324,6 +337,7 @@
 			files = (
 				3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */,
 				3814C2E91D15CA26001FC733 /* Request.swift in Sources */,
+				4B073AF61D2B12A2006BB2B4 /* Parser.swift in Sources */,
 				4B073AEB1D2B0EAB006BB2B4 /* InstagramServiceTests.swift in Sources */,
 				4B073AEE1D2B0F7B006BB2B4 /* InstagramDelegate.swift in Sources */,
 				3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */,
