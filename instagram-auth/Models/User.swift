@@ -31,7 +31,7 @@ public struct User {
 
 extension User: Parsable {
     
-    func parse(dictionary: [String : AnyObject]) -> User? {
+    static func parse(dictionary: [String : AnyObject]) -> User? {
         guard let id = dictionary["id"] as? String,
             let userName = dictionary["username"] as? String,
             let fullName = dictionary["full_name"] as? String else {

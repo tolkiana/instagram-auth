@@ -10,5 +10,5 @@ import Foundation
 
 protocol Parsable {
     associatedtype T
-    func parse(dictionary: [String: AnyObject]) -> T?
+    static func parse(dictionary: [String: AnyObject]) -> T?
 }
