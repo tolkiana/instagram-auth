@@ -8,7 +8,8 @@
 
 import Foundation
 
-class InstagramService {
+public class InstagramService {
+    public var delegate: InstagramDelegate?
     
     func startAuthorization(withURL url: NSURL) {
     }

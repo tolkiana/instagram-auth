@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol InstagramDelegate {
+public protocol InstagramDelegate {
     func didGetAuthorizationCode(code: String)
     func didFailAuthorizing()
     func didGetAccessToken(token: String, forUser user: User)
