@@ -26,5 +26,28 @@ public class InstagramService {
     }
     
     func requestAccessToken(withCode code: String) {
+        let request = Request.Instagram.accessToken(code)
+        
+        let success = { (response: AnyObject) -> Void in
+            guard let json = response as? [String: AnyObject] else {
+                self.delegate?.didFailGettingAccessToken()
+                return
+            }
+            
+            guard let token = json["access_token"] as? String,
+                let userJson = json["user"] as? [String: AnyObject],
+                let user = User.parse(userJson) else {
+                    self.delegate?.didFailGettingAccessToken()
+                    return
+            }
+            self.delegate?.didGetAccessToken(token, forUser: user)
+        }
+        
+        let failure = { (error: NetworkError) -> Void in
+            self.delegate?.didFailGettingAccessToken()
+        }
+        
+        NetworkManager.HTTPRequest(request, success: success, failure: failure)
+        
     }
 }
