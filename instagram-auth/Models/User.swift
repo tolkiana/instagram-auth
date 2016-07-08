@@ -32,17 +32,13 @@ struct User {
 extension User: Parsable {
     
     func parse(dictionary: [String : AnyObject]) -> User? {
-        guard let userDictionary = dictionary["user"] else {
-            return nil
-        }
-        
-        guard let id = userDictionary["id"] as? String,
-            let userName = userDictionary["username"] as? String,
-            let fullName = userDictionary["full_name"] as? String else {
+        guard let id = dictionary["id"] as? String,
+            let userName = dictionary["username"] as? String,
+            let fullName = dictionary["full_name"] as? String else {
                 return nil
         }
         
-        guard let pictureString = userDictionary["profile_picture"] as? String,
+        guard let pictureString = dictionary["profile_picture"] as? String,
             let pictureURL = NSURL(string: pictureString) else {
                 return User(id: id, userName: userName, fullName: fullName)
         }
