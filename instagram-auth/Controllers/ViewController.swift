@@ -9,8 +9,5 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBAction func login(sender: AnyObject) {
-    }
 }
 
