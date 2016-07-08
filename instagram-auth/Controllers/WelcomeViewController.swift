@@ -9,6 +9,9 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    var userViewModel: UserModelView?
+    
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
 
