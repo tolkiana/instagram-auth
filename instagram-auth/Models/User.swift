@@ -43,9 +43,6 @@ extension User: Parsable {
                 return User(id: id, userName: userName, fullName: fullName)
         }
         
-        return User(id: id,
-                    userName: userName,
-                    fullName: fullName,
-                    pictureURL: pictureURL)
+        return User(id: id, userName: userName, fullName: fullName, pictureURL: pictureURL)
     }
 }
