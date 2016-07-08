@@ -175,9 +175,9 @@
 		3814C2D31D0F8ACA001FC733 /* instagram-authTests */ = {
 			isa = PBXGroup;
 			children = (
+				3814C2DC1D0F8AE1001FC733 /* Network */,
 				4B073AE91D2B0E7B006BB2B4 /* Service */,
 				3814C2E01D0F8B43001FC733 /* instagram-authTests-Bridging-Header.h */,
-				3814C2DC1D0F8AE1001FC733 /* Network */,
 				3814C2D61D0F8ACA001FC733 /* Info.plist */,
 			);
 			path = "instagram-authTests";
