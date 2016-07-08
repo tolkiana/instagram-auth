@@ -10,11 +10,9 @@ import Foundation
 
 class InstagramService {
     
-    func startAuthorization(with url: NSURL) {
-    
+    func startAuthorization(withURL url: NSURL) {
     }
     
-    func requestAccessToken(with code: String) {
-        
+    func requestAccessToken(withCode code: String) {
     }
 }

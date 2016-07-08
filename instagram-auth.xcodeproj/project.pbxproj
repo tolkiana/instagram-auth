@@ -33,6 +33,7 @@
 		4B073AF21D2B10C5006BB2B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF01D2B10C5006BB2B4 /* User.swift */; };
 		4B073AF51D2B12A2006BB2B4 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF41D2B12A2006BB2B4 /* Parsable.swift */; };
 		4B073AF61D2B12A2006BB2B4 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AF41D2B12A2006BB2B4 /* Parsable.swift */; };
+		4B8018791D2F2EE700458F35 /* Dictionary+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2C41D0E3A4B001FC733 /* Dictionary+Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -338,6 +339,7 @@
 				3814C2E21D0F8C51001FC733 /* NetworkError.swift in Sources */,
 				3814C2E91D15CA26001FC733 /* Request.swift in Sources */,
 				4B073AF61D2B12A2006BB2B4 /* Parsable.swift in Sources */,
+				4B8018791D2F2EE700458F35 /* Dictionary+Utilities.swift in Sources */,
 				4B073AEB1D2B0EAB006BB2B4 /* InstagramServiceTests.swift in Sources */,
 				4B073AEE1D2B0F7B006BB2B4 /* InstagramDelegate.swift in Sources */,
 				3814C2E11D0F8C4B001FC733 /* NetworkManager.swift in Sources */,
