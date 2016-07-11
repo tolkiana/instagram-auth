@@ -11,4 +11,9 @@ import UIKit
 struct UserModelView {
     var name: String
     var image: UIImage
+    
+    init(user: User) {
+        self.name = user.userName
+        self.image = UIImage(named: Constans.ImageName.userPlaceholder)!
+    }
 }
