@@ -47,4 +47,8 @@ enum Constans {
         static let POST = "POST"
         static let GET = "GET"
     }
+    
+    enum ImageName {
+        static let userPlaceholder = "user_placeholder"
+    }
 }
