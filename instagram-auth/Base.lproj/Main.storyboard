@@ -123,7 +123,7 @@
                     <connections>
                         <outlet property="loadingView" destination="bsu-3i-4jQ" id="Ngf-cq-gQq"/>
                         <outlet property="webView" destination="fyk-Fv-p32" id="2ej-id-t3c"/>
-                        <segue destination="If7-MS-ODe" kind="show" id="ZIP-q0-NbG"/>
+                        <segue destination="If7-MS-ODe" kind="show" identifier="welcomeSegue" id="ZIP-q0-NbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A39-uQ-VM0" userLabel="First Responder" sceneMemberID="firstResponder"/>

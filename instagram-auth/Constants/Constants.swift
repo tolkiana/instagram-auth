@@ -51,4 +51,8 @@ enum Constans {
     enum ImageName {
         static let userPlaceholder = "user_placeholder"
     }
+    
+    enum Segue {
+        static let welcome = "welcomeSegue"
+    }
 }
