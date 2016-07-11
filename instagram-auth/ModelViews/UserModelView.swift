@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct UserModelView {
+class UserModelView {
     var name: String
     var image: UIImage
     
