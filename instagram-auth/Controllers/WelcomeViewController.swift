@@ -19,5 +19,14 @@ class WelcomeViewController: UIViewController {
             profileImageView.image = userViewModel?.image
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: false)
+    }
+    
+    @IBAction func logout(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

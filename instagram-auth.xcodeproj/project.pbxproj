@@ -25,6 +25,7 @@
 		3814C2F51D18CE07001FC733 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2F41D18CE07001FC733 /* LoginViewController.swift */; };
 		3814C2F71D18CE37001FC733 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3814C2F61D18CE37001FC733 /* WelcomeViewController.swift */; };
 		38FCC7C61D2F4DFE00A9BAF9 /* UserModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC7C51D2F4DFE00A9BAF9 /* UserModelView.swift */; };
+		38FCC7C81D346FC200A9BAF9 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC7C71D346FC200A9BAF9 /* ErrorViewController.swift */; };
 		4B073AE71D2B0C8E006BB2B4 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */; };
 		4B073AE81D2B0C8E006BB2B4 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */; };
 		4B073AEB1D2B0EAB006BB2B4 /* InstagramServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AEA1D2B0EAB006BB2B4 /* InstagramServiceTests.swift */; };
@@ -67,6 +68,7 @@
 		3814C2F41D18CE07001FC733 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3814C2F61D18CE37001FC733 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		38FCC7C51D2F4DFE00A9BAF9 /* UserModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelView.swift; sourceTree = "<group>"; };
+		38FCC7C71D346FC200A9BAF9 /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
 		4B073AEA1D2B0EAB006BB2B4 /* InstagramServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramServiceTests.swift; sourceTree = "<group>"; };
 		4B073AEC1D2B0F7B006BB2B4 /* InstagramDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				3814C2BF1D0E2F4E001FC733 /* ViewController.swift */,
 				3814C2F41D18CE07001FC733 /* LoginViewController.swift */,
 				3814C2F61D18CE37001FC733 /* WelcomeViewController.swift */,
+				38FCC7C71D346FC200A9BAF9 /* ErrorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				3814C2AA1D0E2D99001FC733 /* AppDelegate.swift in Sources */,
 				4B073AF51D2B12A2006BB2B4 /* Parsable.swift in Sources */,
 				3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */,
+				38FCC7C81D346FC200A9BAF9 /* ErrorViewController.swift in Sources */,
 				3814C2F51D18CE07001FC733 /* LoginViewController.swift in Sources */,
 				4B073AE71D2B0C8E006BB2B4 /* InstagramService.swift in Sources */,
 				3814C2C91D0F74BB001FC733 /* NetworkError.swift in Sources */,
