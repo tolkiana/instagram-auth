@@ -65,11 +65,15 @@ extension LoginViewController: InstagramDelegate {
     }
     
     func didFailAuthorizing() {
-        print("Fail")
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier(Constans.Segue.error, sender: nil)
+        }
     }
     
     func didFailGettingAccessToken() {
-        print("Fail")
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier(Constans.Segue.error, sender: nil)
+        }
     }
 
 }

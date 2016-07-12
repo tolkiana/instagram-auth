@@ -54,5 +54,6 @@ enum Constans {
     
     enum Segue {
         static let welcome = "welcomeSegue"
+        static let error = "errorSegue"
     }
 }

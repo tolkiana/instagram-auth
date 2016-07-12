@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROC-oG-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="1203"/>
+            <point key="canvasLocation" x="1356" y="1190"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="fNu-OT-tzm">
@@ -124,11 +124,12 @@
                         <outlet property="loadingView" destination="bsu-3i-4jQ" id="Ngf-cq-gQq"/>
                         <outlet property="webView" destination="fyk-Fv-p32" id="2ej-id-t3c"/>
                         <segue destination="If7-MS-ODe" kind="show" identifier="welcomeSegue" id="ZIP-q0-NbG"/>
+                        <segue destination="0wf-Qk-4Qr" kind="show" identifier="errorSegue" id="BuO-E8-af3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A39-uQ-VM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="424"/>
+            <point key="canvasLocation" x="1914" y="413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J6N-bD-acv">
@@ -148,5 +149,47 @@
             </objects>
             <point key="canvasLocation" x="1123" y="424"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wyB-sb-KBQ">
+            <objects>
+                <viewController id="0wf-Qk-4Qr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TFg-lA-ztF"/>
+                        <viewControllerLayoutGuide type="bottom" id="tiq-29-mw7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oG4-SR-Ecb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry authorization failed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntK-28-PJj">
+                                <rect key="frame" x="186" y="104" width="228" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okay" translatesAutoresizingMaskIntoConstraints="NO" id="g1S-4C-1tD">
+                                <rect key="frame" x="215" y="191" width="170" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g1S-4C-1tD" secondAttribute="height" multiplier="85:109" id="fnv-XB-wMv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g1S-4C-1tD" firstAttribute="centerX" secondItem="oG4-SR-Ecb" secondAttribute="centerX" id="9ol-gr-G3p"/>
+                            <constraint firstItem="g1S-4C-1tD" firstAttribute="centerY" secondItem="oG4-SR-Ecb" secondAttribute="centerY" id="bjp-qC-UtY"/>
+                            <constraint firstItem="g1S-4C-1tD" firstAttribute="width" secondItem="oG4-SR-Ecb" secondAttribute="height" multiplier="17:60" id="cFu-9B-VYG"/>
+                            <constraint firstItem="ntK-28-PJj" firstAttribute="centerX" secondItem="oG4-SR-Ecb" secondAttribute="centerX" id="poP-EU-QNK"/>
+                            <constraint firstItem="ntK-28-PJj" firstAttribute="top" secondItem="TFg-lA-ztF" secondAttribute="bottom" constant="40" id="xip-cP-8BY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5h-xh-L3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="1190"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="okay" width="680" height="875"/>
+    </resources>
 </document>
