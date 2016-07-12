@@ -24,6 +24,13 @@ class LoginViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == Constans.Segue.welcome {
+            let welcomeController = segue.destinationViewController as? WelcomeViewController
+            welcomeController?.userViewModel = sender as? UserModelView
+        }
+    }
+    
 }
 
 extension LoginViewController: UIWebViewDelegate {
