@@ -26,6 +26,7 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func logout(sender: UIButton) {
+        InstagramService.logout()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

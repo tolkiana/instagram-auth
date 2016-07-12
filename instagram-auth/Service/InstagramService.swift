@@ -48,6 +48,15 @@ public class InstagramService {
         }
         
         NetworkManager.HTTPRequest(request, success: success, failure: failure)
-        
+    }
+    
+    static func logout() {
+        let storage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+        guard let cookies = storage.cookies else {
+            return
+        }
+        for cookie in cookies {
+            storage.deleteCookie(cookie)
+        }
     }
 }
