@@ -58,7 +58,10 @@ extension LoginViewController: InstagramDelegate {
     }
     
     func didGetAccessToken(token: String, forUser user: User) {
-        print(token)
+        let modelView = UserModelView(user: user)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier(Constans.Segue.welcome, sender: modelView)
+        }
     }
     
     func didFailAuthorizing() {
