@@ -12,17 +12,13 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
-    
-    var userViewModel: UserModelView? = nil{
-        didSet {
-            nameLabel.text = userViewModel?.name
-            profileImageView.image = userViewModel?.image
-        }
-    }
+    typealias T = UserModelView
+    private var userViewModel: UserModelView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        assertDependencies()
     }
     
     @IBAction func logout(sender: UIButton) {
@@ -30,4 +26,16 @@ class WelcomeViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+}
+
+extension WelcomeViewController: Injectable {
+
+    func inject(modelView: T) {
+        userViewModel = modelView
+    }
+    
+    func assertDependencies() {
+        nameLabel.text = userViewModel?.name
+        profileImageView.image = userViewModel?.image
+    }
 }
