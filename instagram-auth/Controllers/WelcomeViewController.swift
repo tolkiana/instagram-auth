@@ -12,7 +12,6 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
-    typealias T = UserModelView
     private var userViewModel: UserModelView?
     
     override func viewDidLoad() {
@@ -30,7 +29,7 @@ class WelcomeViewController: UIViewController {
 
 extension WelcomeViewController: Injectable {
 
-    func inject(modelView: T) {
+    func inject(modelView: UserModelView) {
         userViewModel = modelView
     }
     
