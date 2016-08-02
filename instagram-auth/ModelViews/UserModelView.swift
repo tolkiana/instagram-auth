@@ -19,8 +19,9 @@ class UserModelView: UserModelProtocol {
         guard let pictureURL = user.pictureURL else {
             return
         }
-        NetworkManager.downloadResource(url: pictureURL) { (data) in
-            guard let data = data else {
+        NetworkManager.downloadResource(url: pictureURL) {
+            [unowned self] in
+            guard let data = $0 else {
                 return
             }
             self.image = Dynamic(UIImage(data: data))

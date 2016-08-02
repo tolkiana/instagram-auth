@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "instagram-auth/ModelViews/UserModelView.swift"
-            timestampString = "491802063.471456"
+            timestampString = "491802507.34968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "init(user:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,7 +58,7 @@
                   moduleName = "instagram-auth"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tolkiana/Documents/apps/instagram-auth/instagram-auth/Controllers/WelcomeViewController.swift"
-                  timestampString = "491802082.436215"
+                  timestampString = "491802628.404479"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -73,7 +73,7 @@
                   moduleName = "instagram-auth"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tolkiana/Documents/apps/instagram-auth/instagram-auth/Controllers/WelcomeViewController.swift"
-                  timestampString = "491802082.436431"
+                  timestampString = "491802628.404675"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -81,6 +81,22 @@
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagram-auth/Models/Dynamic.swift"
+            timestampString = "491802586.565808"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "Dynamic"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
