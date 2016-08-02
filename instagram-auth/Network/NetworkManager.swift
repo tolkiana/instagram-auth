@@ -41,4 +41,15 @@ struct NetworkManager {
         task.resume()
     }
     
+    static func downloadResource(url url: NSURL, completion: (data: NSData?) -> Void) {
+        let downloadTask =  NSURLSession.sharedSession().downloadTaskWithURL(url) {
+            location, response, error in
+            guard let tempLocation = location else {
+                return
+            }
+            let data = NSData(contentsOfURL: tempLocation)
+            completion(data: data)
+        }
+        downloadTask.resume()
+    }
 }

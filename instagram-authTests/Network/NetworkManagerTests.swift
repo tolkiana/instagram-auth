@@ -33,5 +33,9 @@ class NetworkManagerTests: XCTestCase {
         
         self.waitForExpectationsWithTimeout(10, handler: nil)
     }
+    
+    func testDownloadResource() {
+        
+    }
 
 }
