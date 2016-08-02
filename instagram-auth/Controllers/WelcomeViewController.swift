@@ -34,7 +34,13 @@ extension WelcomeViewController: Injectable {
     }
     
     func assertDependencies() {
-        nameLabel.text = userViewModel?.name
-        profileImageView.image = userViewModel?.image
+        userViewModel?.name.bindAndFire {
+            [unowned self] in
+            self.nameLabel.text = $0
+        }
+        userViewModel?.image.bindAndFire {
+            [unowned self] in
+            self.profileImageView.image = $0
+        }
     }
 }

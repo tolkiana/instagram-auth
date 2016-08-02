@@ -28,6 +28,7 @@
 		38FCC7C81D346FC200A9BAF9 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC7C71D346FC200A9BAF9 /* ErrorViewController.swift */; };
 		38FCC7CA1D3491A000A9BAF9 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FCC7C91D3491A000A9BAF9 /* Injectable.swift */; };
 		38FE64A41D5040800071D3BD /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE64A31D5040800071D3BD /* Dynamic.swift */; };
+		38FE64A61D5045A30071D3BD /* UserModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE64A51D5045A30071D3BD /* UserModelProtocol.swift */; };
 		4B073AE71D2B0C8E006BB2B4 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */; };
 		4B073AE81D2B0C8E006BB2B4 /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */; };
 		4B073AEB1D2B0EAB006BB2B4 /* InstagramServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B073AEA1D2B0EAB006BB2B4 /* InstagramServiceTests.swift */; };
@@ -73,6 +74,7 @@
 		38FCC7C71D346FC200A9BAF9 /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		38FCC7C91D3491A000A9BAF9 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		38FE64A31D5040800071D3BD /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		38FE64A51D5045A30071D3BD /* UserModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelProtocol.swift; sourceTree = "<group>"; };
 		4B073AE61D2B0C8E006BB2B4 /* InstagramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
 		4B073AEA1D2B0EAB006BB2B4 /* InstagramServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramServiceTests.swift; sourceTree = "<group>"; };
 		4B073AEC1D2B0F7B006BB2B4 /* InstagramDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				4B073AF41D2B12A2006BB2B4 /* Parsable.swift */,
 				38FCC7C91D3491A000A9BAF9 /* Injectable.swift */,
+				38FE64A51D5045A30071D3BD /* UserModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3814C2C71D0E3B55001FC733 /* NetworkManager.swift in Sources */,
 				38FCC7C81D346FC200A9BAF9 /* ErrorViewController.swift in Sources */,
 				3814C2F51D18CE07001FC733 /* LoginViewController.swift in Sources */,
+				38FE64A61D5045A30071D3BD /* UserModelProtocol.swift in Sources */,
 				38FE64A41D5040800071D3BD /* Dynamic.swift in Sources */,
 				4B073AE71D2B0C8E006BB2B4 /* InstagramService.swift in Sources */,
 				3814C2C91D0F74BB001FC733 /* NetworkError.swift in Sources */,
