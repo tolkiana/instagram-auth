@@ -24,7 +24,7 @@ class UserModelView: UserModelProtocol {
             guard let data = $0 else {
                 return
             }
-            self.image = Dynamic(UIImage(data: data))
+            self.image.value = UIImage(data: data)
         }
     }
 }
